@@ -1,22 +1,22 @@
 {
-  "name": "nest-bootstrap",
+  "name": "nest-consul",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/nest-bootstrap/src",
+  "sourceRoot": "packages/nest-consul/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/nest-bootstrap",
-        "tsConfig": "packages/nest-bootstrap/tsconfig.lib.json",
-        "packageJson": "packages/nest-bootstrap/package.json",
-        "main": "packages/nest-bootstrap/src/index.ts",
-        "assets": ["packages/nest-bootstrap/*.md"]
+        "outputPath": "dist/packages/nest-consul",
+        "tsConfig": "packages/nest-consul/tsconfig.lib.json",
+        "packageJson": "packages/nest-consul/package.json",
+        "main": "packages/nest-consul/src/index.ts",
+        "assets": ["packages/nest-consul/*.md"]
       }
     },
     "publish": {
-      "command": "node tools/scripts/publish.mjs nest-bootstrap {args.ver} {args.tag}",
+      "command": "node tools/scripts/publish.mjs nest-consul {args.ver} {args.tag}",
       "dependsOn": ["build"]
     },
     "lint": {
@@ -27,7 +27,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "packages/nest-bootstrap/jest.config.ts"
+        "jestConfig": "packages/nest-consul/jest.config.ts"
       }
     }
   },

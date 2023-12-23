@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@devtoolbox/{projectName}": ["packages/nest-bootstrap/src/index.ts"]
+      "@devtoolbox/nest-consul": ["packages/nest-consul/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

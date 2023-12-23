@@ -53,14 +53,12 @@
   "generators": {
     "@nx/js:library": {
       "buildable": true,
-      "publishable": true,
-      "importPath": "@devtoolbox/{projectName}"
+      "publishable": true
     },
     "@nx/nest:library": {
       "projectNameAndRootFormat": "derived",
       "buildable": true,
-      "publishable": true,
-      "importPath": "@devtoolbox/{projectName}"
+      "publishable": true
     }
   },
   "nxCloudAccessToken": "MTU2NWI3YjQtZTUxNi00MjFjLTk5NmQtMTg5YjE5MmY2NzRmfHJlYWQtd3JpdGU="
