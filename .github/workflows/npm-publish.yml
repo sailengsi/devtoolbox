@@ -17,8 +17,7 @@ jobs:
       - run: npm install -g pnpm
       - run: pnpm install
       - run: ./node_modules/.bin/nx run nest-consul:build
-      - run: cd dist/packages/nest-consul
-      - run: ls -l
+      - run: cd dist/packages/nest-consul & ls -l
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH}}
 
