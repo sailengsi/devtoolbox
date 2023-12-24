@@ -38,9 +38,6 @@
     "rxjs": "^7.8.0",
     "tslib": "^2.3.0"
   },
-  "files": [
-    "dist_npm_publish"
-  ],
   "nx": {
     "includedScripts": []
   }
