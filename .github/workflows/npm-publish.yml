@@ -18,6 +18,7 @@ jobs:
       - run: pnpm install
       - run: ./node_modules/.bin/nx run nest-consul:build
       - run: cp -r ./dist/packages/nest-consul dist_npm_publish
+      - run: cp -r ./dist_npm_publish/package.json .
       - run: npm publish --dry-run
       - run: cat dist_npm_publish/package.json
       - run: npm publish
