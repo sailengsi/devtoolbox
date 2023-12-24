@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@devtoolbox/nest-bootstrap": ["packages/nest-bootstrap/src/index.ts"],
       "@devtoolbox/nest-consul": ["packages/nest-consul/src/index.ts"]
     }
   },
