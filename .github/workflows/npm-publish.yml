@@ -18,7 +18,7 @@ jobs:
       - run: pnpm install
       - run: ./node_modules/.bin/nx run nest-consul:build
       - run: cd dist/packages/nest-consul & ls -l
-      - run: npm publish --dry-run
+      - run: npm publish --dry-run --contents=./dist/packages/nest-consul
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH}}
 
