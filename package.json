@@ -39,7 +39,7 @@
     "tslib": "^2.3.0"
   },
   "files": [
-    "dist"
+    "dist_npm_publish"
   ],
   "nx": {
     "includedScripts": []
