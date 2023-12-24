@@ -9,20 +9,15 @@ jobs:
   build-Publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Publish-Npm
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-        run: |
-          npm install -g pnpm
-          pnpm install
-          ./node_modules/.bin/nx run nest-consul:build
-          cd dist/packages/nest-consul & npm publish --dry-run
-#      - run: npm install -g pnpm
-#      - run: pnpm install
-#      - run: ./node_modules/.bin/nx run nest-consul:build
-#      - run: cd dist/packages/nest-consul & npm publish --dry-run
+      - run: npm install -g pnpm
+      - run: pnpm install
+      - run: ./node_modules/.bin/nx run nest-consul:build
+      - run: npm publish --dry-run
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH}}
 
