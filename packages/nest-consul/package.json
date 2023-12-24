@@ -21,6 +21,9 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "files": [
+    "dist_npm_publish"
+  ],
   "license": "MIT",
   "type": "commonjs",
   "main": "./src/index.js",
